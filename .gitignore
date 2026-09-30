@@ -1,0 +1,7 @@
+# Clés API : ne jamais publier
+.env
+env.js
+
+# Fichiers système
+.DS_Store
+__pycache__/

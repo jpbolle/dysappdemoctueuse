@@ -1,0 +1,94 @@
+/* ============================================================
+   DactyloDys — FEUILLE DE STYLE (CSS)
+   Ce fichier contrôle l'APPARENCE de la page :
+   couleurs, polices, espacements, animations...
+   ============================================================ */
+
+/* Styles de base */
+body {
+    font-family: 'Papyrus', fantasy !important;
+    background: linear-gradient(135deg, #39ff14 0%, #ff00cc 50%, #ffff00 100%) fixed !important;
+    color: #b8b8b8 !important;
+    font-size: 11px;
+    font-style: italic;
+    text-align: justify;
+    line-height: 1 !important;
+    letter-spacing: -0.04em;
+    min-width: 1400px;
+}
+
+/* Barre du haut */
+.sticky {
+    background: #ff1a1a !important;
+    border-bottom: 6px dashed #0000ff !important;
+}
+
+/* Nom de l'application */
+.tracking-tight {
+    font-family: Impact, 'Arial Black', sans-serif !important;
+    color: #ffff00 !important;
+    font-size: 30px !important;
+    animation: clignote 0.6s steps(2) infinite;
+}
+@keyframes clignote {
+    50% { opacity: 0.15; }
+}
+
+/* Panneaux */
+section {
+    transform: rotate(-1.2deg);
+    border: 5px dotted #00ffff !important;
+    margin: 37px 3px 11px 58px;
+}
+section:last-of-type {
+    transform: rotate(1.6deg);
+    margin-top: 5px;
+}
+
+/* Textes */
+.text-slate-500, .text-slate-600, .text-slate-700, .text-slate-800, .text-slate-900, .text-slate-400 {
+    color: #c9c9c9 !important;
+}
+.text-xs, .text-\[10px\] {
+    font-size: 9px !important;
+}
+
+/* Boutons principaux */
+.bg-blue-600 {
+    background: #ffff66 !important;
+    color: #ffffff !important;
+}
+
+/* Zone d'écriture et zone de correction */
+#userTextArea, #interactiveViewer {
+    font-family: 'Papyrus', fantasy !important;
+    font-size: 9pt !important;
+    line-height: 1 !important;
+    letter-spacing: -0.05em !important;
+    color: #9a9a9a !important;
+}
+::placeholder {
+    color: #f4f4f4 !important;
+}
+
+/* Mots à corriger */
+.error-word {
+    color: #ff0000;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Effet focus */
+*:focus, *:focus-visible, .focus-ring:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Animation douce */
+.fade-in {
+    animation: fadeIn 0.3s ease-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
